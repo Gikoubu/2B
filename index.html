@@ -28,13 +28,26 @@
   				100% {
     				opacity: 1;
     				transform: none;}}
+    		.touchred{animation: flash 1s linear infinite;
+    			color: red;}
+				@keyframes flash
+				{0%,100% {opacity: 1;}
+				  50% {opacity: 0;}}
+				details[open] .content {
+  				animation: fadeIn 2.0s ease-in-out;}
+				@keyframes fadeIn {
+  				0% {opacity: 0; /* Transparent */
+    				transform: translateX(+100px); }
+  				100% {
+    				opacity: 1;
+    				transform: none;}}
     		#sorezorekurikku{color: blue;}
 
 		</style>
 	</head>
 	<body class="font">
 		<div class="title">
-			<h1>このサイトは2Bのまとめサイトだよ！<span class="mobile">※当サイトは現在、モバイル端末での表示に適していません。</span><br><br></h1><h1 class="red" class="touch">中間テスト中<br><br></h1>
+			<h1>このサイトは2Bのまとめサイトだよ！<span class="mobile">※当サイトは現在、モバイル端末での表示に適していません。</span><br><br><span class="touchred">1学期中間テスト中</span><br><br></h1>
 			<p>芝学園公式は<a href="https://www.shiba.ac.jp/">こちら</a></p>
 		</div>
 		<h2>注意事項</h2>
